@@ -10,9 +10,10 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
-    "declaration": false,
+    "declaration": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
+    // ↓nodemoduleからaxiosなどのモジュールを探す。
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",

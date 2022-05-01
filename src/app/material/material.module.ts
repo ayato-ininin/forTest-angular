@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
@@ -31,6 +31,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatButtonModule,
     MatButtonToggleModule,MatCardModule,MatCheckboxModule,MatDatepickerModule,MatDialogModule,MatDividerModule,MatFormFieldModule,MatGridListModule,MatIconModule,MatInputModule,MatListModule,MatMenuModule,MatNativeDateModule,MatPaginatorModule,MatProgressSpinnerModule,MatRadioModule,MatSelectModule,MatSidenavModule,MatTableModule,MatToolbarModule,MatTooltipModule
   ],
-  exports:[MatButtonModule,MatButtonToggleModule,MatCardModule,MatCheckboxModule,MatDatepickerModule,MatDialogModule,MatDividerModule,MatFormFieldModule,MatGridListModule,MatIconModule,MatInputModule,MatListModule,MatMenuModule,MatNativeDateModule,MatPaginatorModule,MatProgressSpinnerModule,MatRadioModule,MatSelectModule,MatSidenavModule,MatTableModule,MatToolbarModule,MatTooltipModule]
+  exports: [MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatDatepickerModule, MatDialogModule, MatDividerModule, MatFormFieldModule, MatGridListModule, MatIconModule, MatInputModule, MatListModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressSpinnerModule, MatRadioModule, MatSelectModule, MatSidenavModule, MatTableModule, MatToolbarModule, MatTooltipModule],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class MaterialModule { }

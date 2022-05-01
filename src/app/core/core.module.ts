@@ -12,6 +12,7 @@ import { ErrorMessagingComponent } from './components/error-messaging/error-mess
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [LoadingComponent, ErrorMessagingComponent]
 })
 export class CoreModule { }

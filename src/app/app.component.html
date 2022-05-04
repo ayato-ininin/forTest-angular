@@ -1,6 +1,5 @@
 <!-- Sidenav container -->
 <mat-sidenav-container>
-
   <!-- Side navigation -->
   <mat-sidenav #sidenav mode="side">
     <app-sidenav *ngIf="!this.isSignInPage()"></app-sidenav>
@@ -8,7 +7,6 @@
 
   <!-- Main contents -->
   <mat-sidenav-content>
-
     <!-- Loading Spinner -->
     <app-loading></app-loading>
 
@@ -22,9 +20,6 @@
 
       <!-- Footer -->
       <app-footer *ngIf="!this.isSignInPage()"></app-footer>
-
     </div>
-
   </mat-sidenav-content>
-
 </mat-sidenav-container>

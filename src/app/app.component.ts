@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+
 import { RoutingService } from './core/services/routing.service';
 import { UrlConst } from './pages/constants/url-const';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'product-manage';
@@ -15,8 +16,9 @@ export class AppComponent {
   // constructor(initName: string) {
   //   this.name = initName;
   //  }
-  constructor(private routingService: RoutingService) { }
-  public isSignInPage(): boolean{
+
+  constructor(private routingService: RoutingService) {}
+  public isSignInPage(): boolean {
     console.log(this.routingService.router.url);
     // ただ、これはtsconfig.jsonのcompilerOptionsでstrictNullChecksがtrueになっていない場合はエラーになりません。
     if (UrlConst.SLASH === this.routingService.router.url) {
